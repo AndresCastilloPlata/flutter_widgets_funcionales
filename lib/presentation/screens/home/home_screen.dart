@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_widgets_funcionales/config/menu/menu_items.dart';
-import 'package:flutter_widgets_funcionales/presentation/screens/buttons/buttons_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter + Material 3'),
       ),
-      body: _HomeView(),
+      body: const _HomeView(),
     );
   }
 }
@@ -47,7 +47,8 @@ class _CustomListTitle extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-        Navigator.pushNamed(context, menuItem.link);
+        context.push(menuItem.link);
+        // Navigator.pushNamed(context, menuItem.link);
         // Navigator.of(context).push(
         //   MaterialPageRoute(
         //     builder: (context) => const ButtonsScreen(),
