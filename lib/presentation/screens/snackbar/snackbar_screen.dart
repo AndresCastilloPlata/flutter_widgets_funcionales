@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets_funcionales/config/router/app_router.dart';
 import 'package:go_router/go_router.dart';
 
 class SnackbarScreen extends StatelessWidget {
