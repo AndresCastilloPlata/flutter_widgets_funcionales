@@ -50,4 +50,10 @@ const appMenuItems = <MenuItem>[
     link: '/ui-controls',
     icon: Icons.checklist_rtl_outlined,
   ),
+  MenuItem(
+    title: 'Tutorial',
+    subTitle: 'Ejemplo tutorial introductorio de aplicacion',
+    link: '/tutorial',
+    icon: Icons.accessibility_new_rounded,
+  ),
 ];
