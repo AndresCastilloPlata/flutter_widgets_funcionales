@@ -27,3 +27,5 @@ Esta aplicacion contiene los siguentes elementos:
     l. Tiles
     m. Listas
     n. Pageviews
+    o. Draawers (menu lateral)
+    p. Riverpod (Gestor de estado)
